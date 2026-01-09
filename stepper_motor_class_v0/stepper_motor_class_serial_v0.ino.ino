@@ -71,7 +71,10 @@ void stepper_shah::mmove(int step){
 // Ramps 1.4 example: enable=56, step=60, dir=61
 // Your constructor order: (step, enable, dir, step_time)
 // =====================================================
+// stepper_shah motor_1(step, enable, dir, step_time_us);
+// stepper_shah motor_1(24, 22, 23, 100); // Aruduino Mega 250 to stepper motor driver
 stepper_shah motor_1(60, 56, 61, 700);
+
 
 // =====================================================
 // Simple Serial command interface
@@ -270,3 +273,4 @@ void loop(){
     }
   }
 }
+
